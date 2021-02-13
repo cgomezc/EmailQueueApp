@@ -1,0 +1,7 @@
+C:\Users\cruz.cardenas\Source\Repos\EmailQueueApp\EmailQueueApp\bin\Debug\EmailQueueApp.exe.config
+C:\Users\cruz.cardenas\Source\Repos\EmailQueueApp\EmailQueueApp\bin\Debug\EmailQueueApp.exe
+C:\Users\cruz.cardenas\Source\Repos\EmailQueueApp\EmailQueueApp\bin\Debug\EmailQueueApp.pdb
+C:\Users\cruz.cardenas\Source\Repos\EmailQueueApp\EmailQueueApp\obj\Debug\EmailQueueApp.csprojAssemblyReference.cache
+C:\Users\cruz.cardenas\Source\Repos\EmailQueueApp\EmailQueueApp\obj\Debug\EmailQueueApp.csproj.CoreCompileInputs.cache
+C:\Users\cruz.cardenas\Source\Repos\EmailQueueApp\EmailQueueApp\obj\Debug\EmailQueueApp.exe
+C:\Users\cruz.cardenas\Source\Repos\EmailQueueApp\EmailQueueApp\obj\Debug\EmailQueueApp.pdb
