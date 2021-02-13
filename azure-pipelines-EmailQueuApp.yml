@@ -38,6 +38,13 @@ steps:
     SourceFolder: '$(Build.SourcesDirectory)\EmailQueueApp\bin\Debug'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)\Eq'
+- task: ArchiveFiles@1
+  inputs:
+    rootFolder: '$(Build.SourcesDirectory)\EmailQueueApp\bin\Debug'
+    includeRootFolder: true
+    archiveType: '7z'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
