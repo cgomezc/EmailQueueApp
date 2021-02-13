@@ -35,7 +35,7 @@ steps:
 
 - task: CopyFiles@1
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)\EmailQueueApp\EmailQueueApp\bin\Debug'
+    SourceFolder: '$(Build.SourcesDirectory)\EmailQueueApp\bin\Debug'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)\Eq'
  
