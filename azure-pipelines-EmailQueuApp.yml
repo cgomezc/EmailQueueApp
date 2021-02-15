@@ -3,8 +3,7 @@
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
 
-trigger:
-- main
+
 
 pool:
   vmImage: 'windows-latest'
@@ -50,3 +49,14 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+- task: AzureRmWebAppDeployment@3
+  inputs:
+    azureSubscription: 'inf-lower-automation-339ad297-755e-4f1e-9c41-9f445ddb85b2'
+    WebAppName: 'asap-test01-email-webjob'
+    Package: '$(build.artifactstagingdirectory)/Eq'
+    RemoveAdditionalFilesFlag: true
+    UseWebDeploy: true
+    RenameFilesFlag: true
+    AdditionalArguments: '-retryAttempts:6 -retryInterval:10000 -useChecksum'
+    TakeAppOfflineFlag: true
